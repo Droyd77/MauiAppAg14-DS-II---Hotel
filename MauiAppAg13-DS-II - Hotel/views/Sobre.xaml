@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppAg13_DS_II___Hotel.views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Beige">
+
+    <VerticalStackLayout Padding="20">
+        <Label 
+            Text="Aplicativo de Hotel"
+            FontSize="28" TextColor="red"
+            FontFamily="Bauhaus-93Regular"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label Text="Desenvolvido por: David JSC "
+               FontSize="18"
+               HorizontalOptions="Center"/>
+        <Label Text="Agenda13.Aluno.David-Versão1.1" 
+               FontSize="18" 
+               HorizontalOptions="Center"/>
+        <Label Text="Data:29/10/2025" 
+               FontSize="18" 
+               HorizontalOptions="Center"/>
+        
+        <Frame>
+            <VerticalStackLayout Padding="10" Spacing="15">
+                <Label Text="🏨 Sobre o Aplicativo"
+                       FontAttributes="Bold"
+                       FontSize="18" HorizontalOptions="Center"
+                   TextColor="#2A3D66"/>
+                <BoxView HeightRequest="2" Color="#2A3D66" />
+                
+                <Label Text="Descrição:"
+                   FontAttributes="Bold"
+                   FontSize="14"
+                   TextColor="#2A3D66" />
+                <Label Text="Aplicativo desenvolvido com o objetivo de explorar recursos de interface gráfica e aprimorar os conhecimentos na linguagem C# e nas funcionalidades da XAML.
+Este projeto integra o Curso Técnico em Desenvolvimento de Sistemas, como atividade do Módulo II — Agenda 13, voltada ao desenvolvimento de aplicativos utilizando a plataforma .NET MAUI."
+                   FontSize="12"
+                   TextColor="Black" />
+                <Label Text="Créditos:"
+                   FontAttributes="Bold"
+                   FontSize="14"
+                   TextColor="#2A3D66" />
+                <Label Text="Centro Paula Souza – Centro Estadual de Educação Tecnológica “Paula Souza”,
+Governo do Estado de São Paulo,
+Prof. Rodrigo Bressan,
+Prof. Tiago Silva. "
+                   FontSize="12"
+                   TextColor="Black" />
+            </VerticalStackLayout>
+                      
+        </Frame>
+            <ScrollView>
+            <Label  Text="Segue link do GitHub contendo o projeto:"
+                    FontSize="10" />
+           </ScrollView>
+        
+            <ScrollView>
+
+            <Label Text="https://github.com/Droyd77/MauiAppAg13-DS-II---Hotel.git"
+                   FontSize="12"
+                   TextColor="Blue"
+                   TextDecorations="Underline">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                        CommandParameter="https://github.com/Droyd77/MauiAppAg13-DS-II---Hotel.git"
+                        Tapped="OnLinkTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+           
+        </ScrollView>
+
+    </VerticalStackLayout>
+</ContentPage>
