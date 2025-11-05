@@ -9,7 +9,7 @@
     <VerticalStackLayout VerticalOptions="Center" Padding="10">
         <Label 
             Text="Cálculo da Diária"
-            FontFamily="Bauhaus-93Regular" FontSize="45" TextColor="Red" />
+            FontFamily="Bauhaus-93Regular" FontSize="45" TextColor="Black" />
        
         <Frame Padding="10">
             <VerticalStackLayout>
@@ -48,7 +48,9 @@
                 <Label Text=" SUITE"  FontFamily="Kalam-Bold" />
                 
                 <Picker x:Name="pck_quarto"
-                        Title="Serlecione sua Acomodação"/>
+                        Title="Serlecione sua Acomodação"
+                        ItemDisplayBinding="{Binding Descricao}"
+                />
                 <Frame Padding="10" 
                        Margin="10">
 
@@ -57,13 +59,14 @@
                         
                         <HorizontalStackLayout>
                             <Label Text="Check-in:" />
-                            <DatePicker x:Name="dtpck_chechin"
+                            <DatePicker x:Name="dtpck_checkin"
+                                        DateSelected="dtpck_checkin_DateSelected"                                        
                                          Format="dd/MM/yyyy"/>                            
                         </HorizontalStackLayout>
                         
                         <HorizontalStackLayout>
                             <Label Text="Check-out:" />
-                            <DatePicker x:Name="dtpck_chechout"
+                            <DatePicker x:Name="dtpck_checkout"
                                          Format="dd/MM/yyyy"/>
                         </HorizontalStackLayout>
                     </VerticalStackLayout>
@@ -71,7 +74,8 @@
                     
                 </Frame>
 
-                <ImageButton Source="dseta.png" 
+                <ImageButton Source="dseta.png"
+                Clicked="ImageButton_Clicked"
                 BackgroundColor="Transparent"           
                 WidthRequest="100"
                HeightRequest="100"
