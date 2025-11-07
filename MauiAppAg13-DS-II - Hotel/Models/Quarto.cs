@@ -10,6 +10,6 @@ namespace MauiAppAg13_DS_II___Hotel.Models
     {
         public string Descricao { get; set; }
         public double ValorDiariaAdulto { get; set; }
-        public double valorDiariaCrianca { get; set; }
+        public double ValorDiariaCrianca { get; set; }
     }
 }

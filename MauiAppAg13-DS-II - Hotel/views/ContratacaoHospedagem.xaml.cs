@@ -28,7 +28,7 @@ public partial class ContratacaoHospedagem : ContentPage
     {
         try
         {
-            Navigation.PushAsync(new Hospedagemcontratada());
+            Navigation.PushAsync(new HospedagemContratada());
         }
         catch (Exception ex)
         {

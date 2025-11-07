@@ -1,20 +1,30 @@
-namespace MauiAppAg13_DS_II___Hotel.views;
+using Microsoft.Maui.Controls;
+using System.Threading.Tasks;
 
-public partial class Hospedagemcontratada : ContentPage
+namespace MauiAppAg13_DS_II___Hotel.views
 {
-	public Hospedagemcontratada()
-	{
-		InitializeComponent();
-	}
-
-    private void ImageButton_Clicked(object sender, EventArgs e)
+    public partial class HospedagemContratada : ContentPage
     {
-		try
-		{
-			Navigation.PopAsync();
-		}catch (Exception ex )
-		{
-			DisplayAlert("Ops", ex.Message, "Ok");
-		}
-		}
+        public HospedagemContratada()
+        {
+            InitializeComponent();
+        }
+
+        private async void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                await Navigation.PopAsync(); // volta para a página anterior
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops", ex.Message, "OK");
+            }
+        }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NewReservar());
+        }
+    }
 }

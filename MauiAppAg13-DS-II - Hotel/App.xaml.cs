@@ -10,26 +10,26 @@ namespace MauiAppAg13_DS_II___Hotel
             {
                 Descricao= "Suite Super luxo",
                 ValorDiariaAdulto= 100.00,
-                valorDiariaCrianca=80.00
+                ValorDiariaCrianca=80.00
             },
             new Quarto()
             {
                 Descricao="Suite Luxo",
                 ValorDiariaAdulto=80.00,
-                valorDiariaCrianca=60.00
+                ValorDiariaCrianca=60.00
             },
             new Quarto()
             {
                 Descricao="Suite Single",
                 ValorDiariaAdulto=60.00,
-                valorDiariaCrianca=40.00
+                ValorDiariaCrianca=40.00
                 
             },
              new Quarto()
             {
                 Descricao="Suite Crise",
                 ValorDiariaAdulto=40.00,
-                valorDiariaCrianca=20.00
+                ValorDiariaCrianca=20.00
 
             }
 
@@ -48,7 +48,7 @@ namespace MauiAppAg13_DS_II___Hotel
             var window =base.CreateWindow(activationState);
 
             window.Width = 400;
-            window.Height = 600;
+            window.Height = 800;
 
             return window;// retorno da mesma instancia configurada
         }
