@@ -2,10 +2,7 @@ namespace MauiAppAg13_DS_II___Hotel.views;
 
 public partial class NewReservar : ContentPage
 {
-	public NewReservar()
-	{
-		InitializeComponent();
-	}
+    public NewReservar() => InitializeComponent();
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
