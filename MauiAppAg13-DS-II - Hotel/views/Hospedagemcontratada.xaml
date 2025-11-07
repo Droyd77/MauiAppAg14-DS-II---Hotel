@@ -55,11 +55,11 @@
                      BackgroundColor="Transparent"
                      WidthRequest="100"
                      HeightRequest="100"
-                     HorizontalOptions="End"
+                     HorizontalOptions="Start"
                      VerticalOptions="Center"
                      Clicked="ImageButton_Clicked"/>
 
-        <Button Text="Reservar agora" BackgroundColor="green"
+        <Button Text="Reservar Agora" BackgroundColor="green"
                 TextColor="White"
                 CornerRadius="200"
                 FontAttributes="Bold"

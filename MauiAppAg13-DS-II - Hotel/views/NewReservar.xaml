@@ -7,20 +7,20 @@
              BackgroundColor="GreenYellow">
 
     <VerticalStackLayout VerticalOptions="Center" Padding="20" Spacing="15">
-
+        
         <Label Text="Formulário de Reserva"
-                   FontSize="22"
-                   FontAttributes="Bold"
-                   HorizontalOptions="Center" />
+                  FontSize="32"
+                  FontFamily="BAUHS93"                  
+                  HorizontalOptions="Center" />
 
-        <Label Text="Nome completo do hóspede:" />
-        <Entry x:Name="txtNome" Placeholder="Digite o nome completo" />
+        <Label Text="Nome completo do hóspede:" FontAttributes="Bold" />
+        <Entry x:Name="txtNome" Placeholder="Digite o nome completo" BackgroundColor="White" />
 
-        <Label Text="CPF ou RG:" />
-        <Entry x:Name="txtDocumento" Placeholder="Digite o CPF ou RG" Keyboard="Numeric" />
+        <Label Text="CPF ou RG:" FontAttributes="Bold" />
+        <Entry x:Name="txtDocumento" Placeholder="Digite o CPF ou RG" Keyboard="Numeric" BackgroundColor="White" />
 
-        <Label Text="Tipo de pagamento:" />
-        <Picker x:Name="pckPagamento" Title="Selecione a forma de pagamento" >
+        <Label Text="Tipo de pagamento:" FontAttributes="Bold" />
+        <Picker x:Name="pckPagamento" Title="Selecione a forma de pagamento" BackgroundColor="White" >
             <Picker.Items>
                 <x:String>Cartão de Crédito</x:String>
                 <x:String>Cartão de Débito</x:String>

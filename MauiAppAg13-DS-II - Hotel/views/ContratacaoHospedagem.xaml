@@ -79,7 +79,7 @@
                 BackgroundColor="Transparent"           
                 WidthRequest="100"
                HeightRequest="100"
-                HorizontalOptions="Center"
+                HorizontalOptions="End"
                 VerticalOptions="Center"/>
                 
 
@@ -90,7 +90,7 @@
              BackgroundColor="Transparent"           
              WidthRequest="20"
              HeightRequest="100"
-             HorizontalOptions="End"
+             HorizontalOptions="Start"
              VerticalOptions="Center"
              Clicked="OnSobreClicked"/>
         
