@@ -8,7 +8,7 @@
 
     <VerticalStackLayout VerticalOptions="Center" Margin="20">
 
-        <Label Text="Suíte Super Luxo"
+        <Label Text="{Binding QuartoSelecionado.Descricao}"
                TextColor="Black"
                FontFamily="BAUHS93"
                FontSize="40"
@@ -19,12 +19,12 @@
             <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
                 <HorizontalStackLayout>
                     <Label Text="Adultos:" />
-                    <Label Text="2" TextColor="{StaticResource Primary}" FontAttributes="Bold" />
+                    <Label Text="{Binding QntAdultos}" TextColor="{StaticResource Primary}" FontAttributes="Bold" />
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout>
                     <Label Text="Crianças:" />
-                    <Label Text="2" TextColor="{StaticResource Primary}" FontAttributes="Bold" />
+                    <Label Text="{Binding QntCriancas}" TextColor="{StaticResource Primary}" FontAttributes="Bold" />
                 </HorizontalStackLayout>
             </HorizontalStackLayout>
         </Frame>
@@ -36,9 +36,9 @@
                 <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" FontAttributes="Bold"/>
                 <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" FontAttributes="Bold"/>
 
-                <Label Grid.Row="1" Grid.Column="0" Text="27/03/2025" />
-                <Label Grid.Row="1" Grid.Column="1" Text="02/04/2025" />
-                <Label Grid.Row="1" Grid.Column="2" Text="3 dias" />
+                <Label Grid.Row="1" Grid.Column="0" Text="{Binding DataCheckIn,StringFormat='{}{0:dd/MM/yyyy}'}" />
+                <Label Grid.Row="1" Grid.Column="1" Text="{Binding DataCheckOut, StringFormat='{}{0:dd/MM/yyyy}'}" />
+                <Label Grid.Row="1" Grid.Column="2" Text="{Binding Estadia}" />
             </Grid>
         </Frame>
 
@@ -46,7 +46,8 @@
         <Frame Margin="10" BorderColor="Gray" CornerRadius="10">
             <HorizontalStackLayout HorizontalOptions="Center">
                 <Label Text="Valor Total:" FontAttributes="Bold"/>
-                <Label Text=" R$ 750,00" TextColor="{StaticResource Primary}" FontAttributes="Bold"/>
+                <Label Text="{Binding ValorTotal,StringFormat='{}{0:c}'}"
+                 TextColor="{StaticResource Primary}" FontAttributes="Bold"/>
             </HorizontalStackLayout>
         </Frame>
 
